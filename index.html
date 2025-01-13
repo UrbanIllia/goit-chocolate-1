@@ -3,51 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Simply Chocolate</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <nav>
-        <a href="./index.html"><span>SIMPLY</span> CHOCOLATE</a>
-        <svg fill="none" width="24" height="24">
+       <nav class="header-nav">
+        <div class="header-nav-logo">
+          <a class="header-nav-logo-a" href="./index.html">SIMPLY <span class="header-nav-logo-span">CHOCOLATE</span></a>
+        <svg class="header-nav-logo-svg" fill="none" width="24" height="24">
                   <use href="./images/icons.svg#icon-chocolate-1"></use>
             </svg>
-        <ul>
-          <li>
-            <a href="./index.html">Home</a>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-links">
+          <li class="header-menu-links-li">
+            <a class="header-menu-links-li-a" href="./index.html">Home</a>
           </li>
-          <li>
-            <a href="#how_its_made"">How it’s made?</a>
+          <li class="header-menu-links-li">
+            <a class="header-menu-links-li-a" href="#how_its_made"">How it’s made?</a>
           </li>
-          <li>
-            <a href="#chocolate_is_loved">Chocolate is loved</a>
+          <li class="header-menu-links-li">
+            <a class="header-menu-links-li-a" href="#chocolate_is_loved">Chocolate is loved</a>
           </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="">
+         </ul>
+         <ul class="header-menu-mes" >
+          <li class="header-menu-mes-li">
+            <a class="header-menu-mes-li-a" href="">
               <svg class="social-networks-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="header-menu-mes-li">
+            <a class="header-menu-mes-li-a" href="">
               <svg class="social-networks-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram-1"></use>
                 </svg>
             </a>
           </li>
-          <li>
-            <a href="">
+          <li class="header-menu-mes-li">
+            <a class="header-menu-mes-li-a" href="">
               <svg class="social-networks-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
             </a>
           </li>
         </ul>
+        </div>
       </nav>
       </div>
     </header>
