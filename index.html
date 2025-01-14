@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -58,146 +62,184 @@
       </nav>
       </div>
     </header>
-    <!-- ////////////////    Head  Section 1 /////////////////-->
-    <section>
-      <div class="container">
-        <h1>
-        Treat yourself or a loved one to our finest ingredients for a moment of
-        pure delight!
-      </h1>
-      <button type="button">Buy now</button>
-      <a href="./index.html">How it’s made</a>
-      <a href="./index.html">scroll down</a>
-      </div>
-    </section>
-    <!-- ////////////////      Section 2      /////////////////-->
-    <section>
-      <div class="container">
-        <h2 hidden>Our Benefits</h2>
-      <ul>
-        <li>
-          <h3>Unsurpassed taste</h3>
-          <p>
-           Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched.
-            Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
-          </p>
-        </li>
-        <li>
-          <h3>Affordable price</h3>
-          <p>
-            Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats.
-             Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
-          </p>
-        </li>
-        <li>
-          <h3>Own production</h3>
-          <p>
-            We take pride in our own production process, ensuring that every step is carefully crafted to perfection.
-             From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
-          </p>
-        </li>
-      </ul>
-      </div>
-    </section>
+    <!-- ////////////////    Hero  Section 1 /////////////////-->
+    <main>
+      <section class="hero section">
+        <div class="container">
+          <h1 class="hero-text">
+            Treat yourself or a loved one to our finest ingredients for a moment of
+            pure delight!
+          </h1>
+          <button class="hero-btn" type="button">Buy now</button>
+          <a class="hero-link-how" href="./index.html">How it’s made</a>
+          <a class="hero-link-scroll" href="./index.html">scroll down</a>
+        </div>
+      </section>
+       <!-- ////////////////      Section 2      /////////////////-->
+      <section class="benefits section" >
+        <div class="container">
+          <h2 class="benefits-title" hidden>Our Benefits</h2>
+          <ul class="benefits-list">
+            <li class="benefits-list-card">
+              <div class="benefits-list-card-divsvg">
+                <svg class="social-networks-svg" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate-2-1"></use>
+                </svg>
+              </div>
+              <div class="benefits-list-card-text">
+                <h3 class="benefits-list-card-text-title">Unsurpassed taste</h3>
+              <p class="benefits-list-card-text-p">
+                Crafted with the finest quality cocoa beans and a dedication to perfection, each bite is a decadent experience that simply cannot be matched.
+                Savor the richness and complexity of our Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+              </div>
+            </li>
+            <li class="benefits-list-card">
+              <div class="benefits-list-card-divsvg">
+                <svg class="social-networks-svg" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin-1"></use>
+                </svg>
+              </div>
+              <div class="benefits-list-card-text">
+                <h3 class="benefits-list-card-text-title">Affordable price</h3>
+              <p class="benefits-list-card-text-p">
+                Indulge in high-quality chocolate without breaking the bank with Simply Chocolate's selection of affordable treats. Enjoy mouth-watering truffles and velvety chocolate bars without sacrificing taste or quality. Browse our selection and indulge in affordable luxury today.
+              </p>
+              </div>
+            </li>
+            <li class="benefits-list-card">
+              <div class="benefits-list-card-divsvg">
+                <svg class="social-networks-svg" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon-1"></use>
+                </svg>
+              </div>
+              <div class="benefits-list-card-text">
+                <h3 class="benefits-list-card-text-title">Own production</h3>
+              <p class="benefits-list-card-text-p">
+                We take pride in our own production process, ensuring that every step is carefully crafted to perfection. From selecting the finest ingredients to handcrafting each piece, our attention to detail is evident in every bite.
+              </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
     <!-- ////////////////    Section 3     /////////////////-->
-    <section>
-      <div class="container">
-        <h2>It all adds up to one exceptional <span>taste</span> sensation</h2>
-      <ul>
-        <li>
-            <img src="" alt="">
-            <p>MILK CHOCOLATE</p>
-        </li>
-        <li>
-            <img src="" alt="">
-            <p>MILK</p>
-        </li>
-        <li>
-            <img src="" alt="">
-            <p>NUTS</p>
-        </li>
-        <li>
-            <img src="" alt="">
-            <p>SEMI - SWEET CHOCOLATE</p>
-        </li>
-        <li>
-            <img src="" alt="">
-            <p>CACAO</p>
-        </li>
-        <li>
-            <img src="" alt="">
-            <p>RASPBERRY</p>
-        </li>
-        <li>
-            <img src="" alt="">
-            <p>COCONUT OIL</p>
-        </li>
+      <section class="tasteadds section">
+        <div class="container">
+          <h2 class="tasteadds-title">It all adds up to one exceptional <span class="tasteadds-title-span">taste</span> sensation</h2>
+          <ul class="tasteadds-title-cards">
+            <li class="tasteadds-title-onecard one">
+               <img class="tasteadds-title-onecard-img" src="./images/img-1d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">MILK CHOCOLATE</p>
+            </li>
+            <li class="tasteadds-title-onecard two">
+               <img class="tasteadds-title-onecard-img" src="./images/img-2d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">MILK</p>
+            </li>
+            <li class="tasteadds-title-onecard three">
+               <img class="tasteadds-title-onecard-img" src="./images/img-3d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">NUTS</p>
+            </li>
+            <li class="tasteadds-title-onecard four">
+               <img class="tasteadds-title-onecard-img" src="./images/img-4d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">SEMI - SWEET CHOCOLATE</p>
+            </li>
+            <li class="tasteadds-title-onecard five">
+               <img class="tasteadds-title-onecard-img" src="./images/img-5d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">CACAO</p>
+            </li>
+            <li class="tasteadds-title-onecard six">
+               <img class="tasteadds-title-onecard-img" src="./images/img-6d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">RASPBERRY</p>
+            </li>
+            <li class="tasteadds-title-onecard seven">
+               <img class="tasteadds-title-onecard-img" src="./images/img-7d.png" width="214" height="160" alt="">
+               <p class="tasteadds-title-onecard-text">COCONUT OIL</p>
+            </li>
       </ul>
       </div>
     </section>
     <!-- ////////////////    Section 4     /////////////////-->
-    <section id="how_its_made">
+    <section class="how-its" id="how_its_made">
       <div class="container">
-        <h2>How it’s <span>made</span>?</h2>
-      <img src="" alt="">
-      <div>
-        <h3>Try  our chocolates today and discover the perfect balance of flavor</h3>
-        <ul>
-            <li>
+        <h2 class="how-its-title" >How it’s <span class="how-its-title-span">made</span>?</h2>
+        <div class="how-its-content">
+          <img class="how-its-content-img" width="600" height="400" src="./images/image_desk.jpg" alt="">
+          <div class="how-its-content-text" >
+            <h3 class="how-its-content-text-title">Try  our chocolates today and discover the perfect balance of flavor</h3>
+            <ul class="how-its-content-text-list">
+              <li class="how-its-content-text-list-li">
                  Heat the milk in a saucepan without bringing it to a boil. Add sugar and cocoa powder.
-            </li>
-            <li>
+              </li>
+              <li class="how-its-content-text-list-li">
                 At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li>
+              </li>
+              <li class="how-its-content-text-list-li">
                 "Mix" the milk mixture and already liquid butter. Mix thoroughly with a silicone spatula so that the mass becomes uniform and silky.
-            </li>
-            <li>
+              </li>
+              <li class="how-its-content-text-list-li">
                 Heat the mixture over low heat, letting it barely boil.
-            </li>
-            <li>
+              </li>
+              <li class="how-its-content-text-list-li">
                 Pour the chocolate into special containers (can be replaced with ice molds). Allow to cool and harden.
-            </li>
-        </ul>
-      </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <!-- ////////////////    Section 5     /////////////////-->
-    <section>
+    <section class="products">
       <div class="container">
-        <h2>Our products</h2>
-      <ul>
-        <li>
-            <h3>Orange</h3>
-            <p>Dark chocolate</p>
+        <h2 class="products-title">Our <span class="products-title-span">products</span></h2>
+      <ul class="products-title-cards">
+        <li class="products-title-onecard">
+            <img class="products-title-onecard-img" width="230" height="201" src="./images/img-1c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Orange</h3>
+            <p class="products-title-onecard-text">Dark chocolate</p>
+            <button class="products-title-onecard-btn">45 UAH</button>
         </li>
-        <li>
-            <h3>Apple&Cranberry</h3>
-            <p>Milk chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-2c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Apple&Cranberry</h3>
+            <p class="products-title-onecard-text">Milk chocolate</p>
+            <button class="products-title-onecard-btn">50 UAH</button>
         </li>
-        <li>
-            <h3>Lime&Sea salt</h3>
-            <p>Dark chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-3c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Lime&Sea salt</h3>
+            <p class="products-title-onecard-text">Dark chocolate</p>
+            <button class="products-title-onecard-btn">66 UAH</button>
         </li>
-        <li>
-            <h3>Pineapple</h3>
-            <p>Dark chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-4c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Pineapple</h3>
+            <p class="products-title-onecard-text">Dark chocolate</p>
+            <button class="products-title-onecard-btn">54 UAH</button>
         </li>
-        <li>
-            <h3>Classic</h3>
-            <p>Milk chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-5c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Classic</h3>
+            <p class="products-title-onecard-text">Milk chocolate</p>
+            <button class="products-title-onecard-btn">45 UAH</button>
         </li>
-        <li>
-            <h3>Honey</h3>
-            <p>Milk chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-6c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Honey</h3>
+            <p class="products-title-onecard-text">Milk chocolate</p>
+            <button class="products-title-onecard-btn">50 UAH</button>
         </li>
-        <li>
-            <h3>Roasted fruits</h3>
-            <p>Dark chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-7c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Roasted fruits</h3>
+            <p class="products-title-onecard-text">Dark chocolate</p>
+            <button class="products-title-onecard-btn">66 UAH</button>
         </li>
-        <li>
-            <h3>Dark chocolate</h3>
-            <p>White chocolate</p>
+        <li class="products-title-onecard">
+          <img class="products-title-onecard-img" width="230" height="201" src="./images/img-8c.jpg" alt="">
+            <h3 class="products-title-onecard-title">Dark chocolate</h3>
+            <p class="products-title-onecard-text">White chocolate</p>
+            <button class="products-title-onecard-btn">54 UAH</button>
         </li>
       </ul>
       </div>
@@ -251,6 +293,7 @@
       </div>
       <button type="button">Leave a review</button>
     </section>
+    </main>
     <footer>
 <div class="container">
     <div class="footer-div"   >
