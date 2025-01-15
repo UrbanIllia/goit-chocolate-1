@@ -13,6 +13,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 h1,
 h2,
@@ -34,11 +35,33 @@ input,
 textarea {
   outline: none;
 }
+button {
+  cursor: pointer;
+}
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
-  /* padding: 0 32px; */
   align-items: center;
+}
+.love-title,
+.sellers-title,
+.products-title,
+.how-its-title,
+.tasteadds-title {
+  font-weight: 600;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-dark);
+  margin-bottom: 50px;
+}
+.love-title-span,
+.how-its-title-span,
+.tasteadds-title-span,
+.products-title-span,
+.sellers-span {
+  color: var(--color-orange);
 }
 /* //////////////     Header     ////////////////////////////// */
 
@@ -91,7 +114,6 @@ textarea {
   justify-content: space-between;
   align-items: center;
   gap: 90px;
-  /* margin-bottom: 20px; */
 }
 .header-menu-mes {
   display: flex;
@@ -122,7 +144,7 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin-bottom: 88px;
+  margin-bottom: 80px;
 }
 .hero-text {
   font-size: 28px;
@@ -159,14 +181,10 @@ textarea {
   color: #ffffff;
 }
 /* //////     Section 2 Benefits    //////////////////////////////// */
-/* .head.section {
-  margin-bottom: 88px;
-} */
 .benefits {
   background-color: var(--color-violet);
   width: 1200px;
   margin: 0 auto;
-  /* padding: 0; */
 }
 .benefits .container {
   padding: 50px;
@@ -206,7 +224,6 @@ textarea {
 .tasteadds .container {
   padding: 120px 32px 60px 32px;
 }
-
 .tasteadds-title-cards {
   display: flex;
   flex-direction: row;
@@ -236,21 +253,7 @@ textarea {
   background-color: var(--color-violet);
   color: white;
 }
-.tasteadds-title {
-  font-weight: 600;
-  line-height: 1.16667;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #111;
-  width: 412px;
-  text-align: center;
-  margin: 0 auto;
-  margin-bottom: 32px;
-}
-.how-its-title-span,
-.tasteadds-title-span {
-  color: var(--color-orange);
-}
+
 .tasteadds-title-onecard-img {
   margin-bottom: 36px;
 }
@@ -267,15 +270,6 @@ textarea {
 } */
 .how-its .container {
   padding: 60px 32px 60px 32px;
-}
-.how-its-title {
-  font-weight: 600;
-  line-height: 1.16667;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-  margin-bottom: 50px;
 }
 .how-its-content {
   display: flex;
@@ -309,18 +303,6 @@ textarea {
 /* /////      Section 5   products  //////////////////////////////////// */
 .products .container {
   padding: 60px 34px 60px 32px;
-}
-.products-title {
-  font-weight: 600;
-  line-height: 1.16667;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #111;
-  margin-bottom: 50px;
-}
-.products-title-span {
-  color: var(--color-orange);
 }
 .products-title-onecard-title {
   font-weight: 600;
@@ -358,9 +340,10 @@ textarea {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 18px;
+  gap: 24px 18px;
 }
 .products-title-onecard {
+  max-width: 270px;
   flex-basis: calc((100%-54px) / 3);
   display: flex;
   flex-direction: column;
@@ -368,6 +351,114 @@ textarea {
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   overflow: hidden;
+  padding: 32px 20px;
   /* width: 270px;
   height: 364px; */
+}
+/* ////  Section 6  Sellers / ///////////////////////////////   */
+.sellers .container {
+  padding: 60px 32px;
+}
+.sellers-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.sellers-onecard-overlay {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+.sellers-onecard-overlay-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  text-align: justify;
+  padding: 178px 40px;
+}
+.sellers-onecard:hover p {
+  transform: translateY(0%);
+}
+.sellers-onecard-textcontent-title {
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+}
+.sellers-onecard-img {
+  max-width: 100%;
+}
+/* //////  Section 7  love   ////////////////////////////    */
+
+.love .container {
+  padding: 60px 32px;
+  /* position: relative; */
+}
+.love-cardlist-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+.love-cardlist-item-text {
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+/* .love-cardlist-item { */
+/* flex-basis: calc((100% - 56px) / 3);
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+  padding: 56px 24px 24px 24px;
+} */
+
+.love-cardlist {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+.love-cardlist-item-img {
+  position: absolute;
+  /* top: 100px;
+  right: 100px; */
+  /* transform: translateX(150px); */
+  /* transform: translate(85px, -100px);  */
+  /* margin-left: auto;
+  margin-right: auto;  */
+  /* top: 0px;
+  left: 127.5px; */
+}
+.sdv {
+  position: relative;
+  text-align: center;
+  /* margin-right: 10px;
+  margin-bottom: 20px; */
+  height: 240px;
+  background-color: var(--dark-white-color);
+}
+.love-cardlist-div {
+  /* padding-top: 42px;
+  position: relative; */
 }
