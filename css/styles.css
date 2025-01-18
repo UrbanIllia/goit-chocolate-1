@@ -8,7 +8,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-white);
+  background-color: #ebebeb;
   color: var(--color-dark);
 }
 a {
@@ -106,12 +106,36 @@ button {
   white-space: nowrap;
 }
 .header-menu-links-li {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu-links-li:hover,
 .header-menu-links-li:focus {
   color: var(--color-orange);
 }
+.header-menu-links-li-a {
+position: relative;
+
+}
+.header-menu-links-li-a:before {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: -5px;
+ display: block;
+ width: 100%;
+ margin-top: 30px;
+ background-color: var(--color-orange);
+ height: 2px;
+ border-radius: 15px; 
+ transform: scale(0);
+ transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+ transform-origin: center;
+} 
+
+.header-menu-links-li-a:hover:before {
+transform: scale(1);
+}
+
 .header-menu-mes-li-a {
   fill: #111111;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -206,6 +230,13 @@ button {
   font-weight: 600;
   line-height: 17.07px;
   color: #ffffff;
+  transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+       border-color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-link-how:hover,
+.hero-link-how:focus {
+color: var(--color-orange);
+border-color: var(--color-orange);
 }
 /* //////     Section 2 Benefits    //////////////////////////////// */
 .benefits {
@@ -330,7 +361,9 @@ button {
 }
 .tasteadds-title-onecard:hover .tasteadds-overlay-card {
   transform: translateY(0%);
-  
+}
+.tasteadds-title-onecard {
+  cursor: pointer;
 }
 .tasteadds-overlay-card-title {
   margin-bottom: 14px;
@@ -419,10 +452,12 @@ text-align: justify;
   position: absolute;
   left: 15px;
   background-color: #4c4c4c;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   width: 8px;
   height: 8px;
   border-radius: 50%;
+  margin-top: 5px;
+  border: 1px solid #ECEDED
 }
 .how-its-content-text {
   position: relative;
@@ -475,12 +510,15 @@ text-align: justify;
   font-size: 14px;
   color: #111;
   padding: 0;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+   color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+   transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products-onecard-btn:focus,
 .products-onecard-btn:hover {
   background-color: var(--color-orange);
   color: #ffffff;
+  transform: scale(1.1);
 }
 .products-cards {
   display: flex;
@@ -686,16 +724,14 @@ text-align: justify;
 }
 .footer-blockfirst-links-mes-link {
   fill: #fff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: fill;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-blockfirst-links-mes-link:hover,
 .footer-blockfirst-links-mes-link:focus {
   fill: var(--color-orange);
 }
 .footer-blockfirst-links-con-add-link {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-blockfirst-links-con-add-link:hover,
 .footer-blockfirst-links-con-add-link:hover {
@@ -715,8 +751,7 @@ text-align: justify;
   font-size: 14px;
   letter-spacing: -0.02em;
   color: #fff;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-blocksecond-nav-list-li:hover,
 .footer-blocksecond-nav-list-li:hover {
@@ -733,9 +768,8 @@ text-align: justify;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28571;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-  transition-property: background-color;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+   background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-blocksecond-form-btn:hover,
 .footer-blocksecond-form-btn:focus {
