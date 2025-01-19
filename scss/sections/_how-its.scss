@@ -1,0 +1,56 @@
+// //  Sectioon 4   how-its   /////////////////////////////////////////////////////
+
+.how-its {
+    & .container {
+        padding: 60px 32px 60px 32px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        background-color: #ffffff;
+
+        &-img {
+            /* width: 100%; */
+            border-radius: 15px;
+        }
+
+        &-text {
+            padding: 32px;
+            position: relative;
+
+            &-title {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.33333;
+                color: #111;
+                margin-bottom: 28px;
+            }
+
+            &-list li:not(:last-child) {
+                margin-bottom: 24px;
+            }
+
+            &-list-li {
+                font-size: 14px;
+                line-height: 1.28571;
+                letter-spacing: -0.02em;
+                color: #111;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 15px;
+                    background-color: #4c4c4c;
+                    /* margin-right: 30px; */
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    margin-top: 5px;
+                    border: 1px solid #ECEDED
+                }
+            }
+        }
+    }
+}

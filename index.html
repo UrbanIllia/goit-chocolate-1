@@ -11,7 +11,7 @@
     rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Simply Chocolate</title>
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./scss/main.css" />
 </head>
 
 <body>
@@ -72,9 +72,17 @@
           Treat yourself or a loved one to our finest ingredients for a moment of
           pure delight!
         </h1>
-        <button class="hero-btn" type="button">Buy now</button>
-        <a class="hero-link-how" href="./index.html">How it’s made</a>
-        <a class="hero-link-scroll" href="./index.html">scroll down</a>
+        <div class="hero-wrapbtn">
+          <button class="hero-btn" type="button">Buy now</button>
+          <a class="hero-link-how" href="./index.html">How it’s made</a>
+          <a class="hero-link-scroll" href="#footerok">scroll down
+            <span class="hero-link-scroll-span">
+              <svg class="hero-link-scroll-svg" width="22" height="22">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
       </div>
     </section>
     <!-- ////////////////      Section 2      /////////////////-->
@@ -135,35 +143,33 @@
       <div class="container">
         <h2 class="tasteadds-title">It all adds up to one exceptional <span class="tasteadds-title-span">taste</span>
           sensation</h2>
-        <ul class="tasteadds-title-cards">
-          <li class="tasteadds-title-onecard">
-            <div class="tasteadds-overlay">
-              <img class="tasteadds-title-onecard-img" src="./images/img-1d.png" width="214" height="160" alt="">
-              <div class="tasteadds-overlay-card">
-                <h3 class="tasteadds-overlay-card-title">MILK CHOCOLATE</h3>
-                <div class="tasteadds-overlay-card-wrapper">
-                  <a class="tasteadds-overlay-card-link1" href="">chocolate</a>
-                  <a class="tasteadds-overlay-card-link2" href="">the benefits</a>
-                </div>
-                <p class="tasteadds-overlay-card-text">Milk chocolate is a solid chocolate confectionery containing
-                  cocoa,
-                  sugar and milk. It is the most consumed type of
-                  chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although
-                  four-fifths of all
-                  milk chocolate is sold in the United States and Europe.</p>
+        <ul class="tasteadds-cards">
+          <li class="tasteadds-onecard">
+            <img class="tasteadds-onecard-img" src="./images/img-1d.png" width="214" height="160" alt="">
+            <div class="tasteadds-overlay-card">
+              <h3 class="tasteadds-overlay-card-title">MILK CHOCOLATE</h3>
+              <div class="tasteadds-overlay-card-wrapper">
+                <a class="tasteadds-overlay-card-link1" href="">chocolate</a>
+                <a class="tasteadds-overlay-card-link2" href="">the benefits</a>
               </div>
+              <p class="tasteadds-overlay-card-text">Milk chocolate is a solid chocolate confectionery containing
+                cocoa,
+                sugar and milk. It is the most consumed type of
+                chocolate. Chocolate was originally sold and consumed as a beverage in pre-Columbian times. Although
+                four-fifths of all
+                milk chocolate is sold in the United States and Europe.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">MILK CHOCOLATE</h3>
+              <h3 class="tasteadds-onecard-text">MILK CHOCOLATE</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arrw"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard">
-            <img class="tasteadds-title-onecard-img" src="./images/img-2d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard">
+            <img class="tasteadds-onecard-img" src="./images/img-2d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">MILK</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -177,16 +183,16 @@
                 called colostrum, contains antibodies that strengthen the immune system.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">MILK</h3>
+              <h3 class="tasteadds-onecard-text">MILK</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arro"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard t">
-            <img class="tasteadds-title-onecard-img" src="./images/img-3d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard">
+            <img class="tasteadds-onecard-img" src="./images/img-3d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">NUTS</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -200,16 +206,16 @@
                 of fiber, healthy fats, and plant protein. Plus, they’re great on their own.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">NUTS</h3>
+              <h3 class="tasteadds-onecard-text">NUTS</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arrw"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard">
-            <img class="tasteadds-title-onecard-img" src="./images/img-4d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard">
+            <img class="tasteadds-onecard-img" src="./images/img-4d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">SEMI - SWEET CHOCOLATE</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -222,16 +228,16 @@
               </p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">SEMI - SWEET CHOCOLATE</h3>
+              <h3 class="tasteadds-onecard-text">SEMI - SWEET CHOCOLATE</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arro"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard">
-            <img class="tasteadds-title-onecard-img" src="./images/img-5d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard">
+            <img class="tasteadds-onecard-img" src="./images/img-5d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">CACAO</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -245,16 +251,16 @@
                 cocoa aromas.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">CACAO</h3>
+              <h3 class="tasteadds-onecard-text">CACAO</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arrw"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard">
-            <img class="tasteadds-title-onecard-img" src="./images/img-6d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard">
+            <img class="tasteadds-onecard-img" src="./images/img-6d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">RASPBERRY</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -267,16 +273,16 @@
                 with woody stems.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">RASPBERRY</h3>
+              <h3 class="tasteadds-onecard-text">RASPBERRY</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arro"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard ">
-            <img class="tasteadds-title-onecard-img" src="./images/img-7d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard ">
+            <img class="tasteadds-onecard-img" src="./images/img-7d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">COCONUT OIL</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -290,16 +296,16 @@
                 medium-chain fatty acids.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">COCONUT OIL</h3>
+              <h3 class="tasteadds-onecard-text">COCONUT OIL</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arrw"></use>
                 </svg>
               </a>
             </div>
           </li>
-          <li class="tasteadds-title-onecard ">
-            <img class="tasteadds-title-onecard-img" src="./images/img-8d.png" width="214" height="160" alt="">
+          <li class="tasteadds-onecard ">
+            <img class="tasteadds-onecard-img" src="./images/img-8d.png" width="214" height="160" alt="">
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">VANILLA</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -311,9 +317,9 @@
                 for foods, beverages and cosmetics, as indicated by its popularity as an ice cream flavor.</p>
             </div>
             <div class="tasteadds-content">
-              <h3 class="tasteadds-title-onecard-text">VANILLA</h3>
+              <h3 class="tasteadds-onecard-text">VANILLA</h3>
               <a href="">
-                <svg class="tasteadds-title-onecard-svg" width="24" height="24">
+                <svg class="tasteadds-onecard-svg" width="24" height="24">
                   <use href="./images/icons.svg#icon-arrw"></use>
                 </svg>
               </a>
@@ -416,7 +422,7 @@
         <ul class="sellers-cards">
           <li class="sellers-onecard">
             <div class="sellers-onecard-overlay">
-              <img class="sellers-onecard-img" width="368" height="464" src="./images/img-1ch.jpg" alt="">
+              <img class="sellers-onecard-overlay-img" width="368" height="464" src="./images/img-1ch.jpg" alt="">
               <p class="sellers-onecard-overlay-text">
                 Chocolate with nuts is a delectable combination that brings together the smoothness of chocolate and the
                 crunchiness of
@@ -431,7 +437,7 @@
           </li>
           <li class="sellers-onecard">
             <div class="sellers-onecard-overlay">
-              <img class="sellers-onecard-img" width="368" height="464" src="./images/img-2ch.jpg" alt="">
+              <img class="sellers-onecard-overlay-img" width="368" height="464" src="./images/img-2ch.jpg" alt="">
               <p class="sellers-onecard-overlay-text">
                 Chocolate with fruit is an unbeatable combination of two of the tastiest things in the world. This
                 dessert combines delicate and aromatic chocolate with fresh and juicy fruits, creating a true poetry of
@@ -444,7 +450,7 @@
           </li>
           <li class="sellers-onecard">
             <div class="sellers-onecard-overlay">
-              <img class="sellers-onecard-img" width="368" height="464" src="./images/img-3ch.jpg" alt="">
+              <img class="sellers-onecard-overlay-img" width="368" height="464" src="./images/img-3ch.jpg" alt="">
               <p class="sellers-onecard-overlay-text">
                 Dark chocolate is a rich and indulgent treat that is beloved by many chocolate enthusiasts. It is made
                 from cocoa beans,
@@ -503,32 +509,32 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footerok">
     <div class="container">
-      <div class="footer-blockfirst">
-        <h2 class="footer-blockfirst-title"><span class="footer-blockfirst-title-span">Chocolate</span> a delicious cure
+      <div class="footer-block1">
+        <h2 class="footer-block1-title"><span class="footer-blockfirst-title-span">Chocolate</span> a delicious cure
           for a bad day
         </h2>
-        <div class="footer-blockfirst-links">
-          <div class="footer-blockfirst-links-mes">
-            <p class="footer-blockfirst-links-mes-text">Social networks</p>
-            <ul class="footer-blockfirst-links-mes-list">
-              <li class="footer-blockfirst-links-mes-list-li">
-                <a class="footer-blockfirst-links-mes-link" href="">
+        <div class="footer-block1-links">
+          <div class="footer-block1-links-mes">
+            <p class="footer-block1-links-mes-text">Social networks</p>
+            <ul class="footer-block1-links-mes-list">
+              <li class="footer-block1-links-mes-list-li">
+                <a class="footer-block1-links-mes-link" href="">
                   <svg width="24" height="24">
                     <use href="./images/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-blockfirst-links-mes-list-li">
-                <a class="footer-blockfirst-links-mes-link" href="">
+              <li class="footer-block1-links-mes-list-li">
+                <a class="footer-block1-links-mes-link" href="">
                   <svg width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-blockfirst-links-mes-list-li">
-                <a class="footer-blockfirst-links-mes-link" href="">
+              <li class="footer-block1-links-mes-list-li">
+                <a class="footer-block1-links-mes-link" href="">
                   <svg width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter-1"></use>
                   </svg>
@@ -536,47 +542,47 @@
               </li>
             </ul>
           </div>
-          <div class="footer-blockfirst-links-con">
-            <p class="footer-blockfirst-links-con-text">Contact us</p>
-            <address class="footer-blockfirst-links-con-text-add">
-              <ul class="footer-blockfirst-links-con-text-add-list">
-                <li class="footer-blockfirst-links-con-text-add-list-li">
-                  <a class="footer-blockfirst-links-con-add-link" href="">+380 (68) 443-94-26</a>
+          <div class="footer-block1-links-con">
+            <p class="footer-block1-links-con-text">Contact us</p>
+            <address class="footer-block1-links-con-text-add">
+              <ul class="footer-block1-links-con-text-add-list">
+                <li class="footer-block1-links-con-text-add-list-li">
+                  <a class="footer-block1-links-con-add-link" href="">+380 (68) 443-94-26</a>
                 </li>
-                <li class="footer-blockfirst-links-con-text-add-list-li">
-                  <a class="footer-blockfirst-links-con-add-link" href="">simplychoc@gmail.com</a>
+                <li class="footer-block1-links-con-text-add-list-li">
+                  <a class="footer-block1-links-con-add-link" href="">simplychoc@gmail.com</a>
                 </li>
               </ul>
             </address>
           </div>
         </div>
       </div>
-      <div class="footer-blocksecond">
-        <nav class="footer-blocksecond-nav">
-          <ul class="footer-blocksecond-nav-list">
-            <li class="footer-blocksecond-nav-list-li">
-              <a class="footer-blocksecond-nav-list-li-a" href="./index.html">Home</a>
+      <div class="footer-block2">
+        <nav class="footer-block2-nav">
+          <ul class="footer-block2-nav-list">
+            <li class="footer-block2-nav-list-li">
+              <a class="footer-block2-nav-list-li-a" href="./index.html">Home</a>
             </li>
-            <li class="footer-blocksecond-nav-list-li">
-              <a class="footer-blocksecond-nav-list-li-a" href="#how_its_made"">How it’s made?</a>
+            <li class="footer-block2-nav-list-li">
+              <a class="footer-block2-nav-list-li-a" href="#how_its_made"">How it’s made?</a>
             </li>
-            <li class=" footer-blocksecond-nav-list-li">
-                <a class="footer-blocksecond-nav-list-li-a" href="#chocolate_is_loved">Chocolate is loved</a>
+            <li class=" footer-block2-nav-list-li">
+                <a class="footer-block2-nav-list-li-a" href="#chocolate_is_loved">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
-        <form class="footer-blocksecond-form">
-          <label class="footer-blocksecond-form-label" for="foot-email-label">
-            <input class="footer-blocksecond-form-input" type="email" id="foot-email-label" name="user-email"
+        <form class="footer-block2-form">
+          <label class="footer-block2-form-label" for="foot-email-label">
+            <input class="footer-block2-form-input" type="email" id="foot-email-label" name="user-email"
               placeholder="Enter your email" />
           </label>
-          <button class="footer-blocksecond-form-btn" type="submit">
+          <button class="footer-block2-form-btn" type="submit">
             Subscribe
           </button>
       </div>
     </div>
   </footer>
-  <div class="modal-overlay">
+  <div class="modal">
     <div class="modal-window">
       <button class="modal-close-btn" type="button">
         <svg class="modal-svg-x" width="16" height="16">
@@ -585,10 +591,12 @@
       </button>
       <p class="modal-text">LEAVE A REVIEW ABOUT <span class="modal-text-span">OUR CHOCOLATE</span></p>
       <form class="modal-form" name="contacts_for_call_back" autocomplete="on">
-        <div class="modal-input-container">
-          <label class="form-label" for="user-name">Name</label>
-          <div class="modal-input-container-svg">
-            <input class="form-input" type="text" id="user-name" name="user-name" required maxlength="10" />
+
+
+        <div class="modal-form-wrap">
+          <label class="modal-form-wrap-label" for="user-name">Name</label>
+          <div class="modal-form-wrap-div">
+            <input class="modal-form-wrap-input" type="text" id="user-name" name="user-name" required maxlength="10" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-user"></use>
             </svg>
@@ -598,10 +606,10 @@
           </div>
         </div>
 
-        <div class="modal-input-container">
-          <label class="form-label" for="useremail">Email</label>
-          <div class="modal-input-container-svg">
-            <input class="form-input" type="email" id="useremail" name="useremail" required maxlength="10" />
+        <div class="modal-form-wrap">
+          <label class="modal-form-wrap-label" for="useremail">Email</label>
+          <div class="modal-form-wrap-div">
+            <input class="modal-form-wrap-input" type="email" id="useremail" name="useremail" required maxlength="10" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-mail"></use>
             </svg>
@@ -611,10 +619,11 @@
           </div>
         </div>
 
-        <div class="modal-input-container">
-          <label class="form-label" for="phonenumber">Phone number</label>
-          <div class="modal-input-container-svg">
-            <input class="form-input" type="tel" id="phonenumber" name="phonenumber" required maxlength="10" />
+        <div class="modal-form-wrap">
+          <label class="modal-form-wrap-label" for="phonenumber">Phone number</label>
+          <div class="modal-form-wrap-div">
+            <input class="modal-form-wrap-input" type="tel" id="phonenumber" name="phonenumber" required
+              maxlength="10" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-phone"></use>
             </svg>
@@ -625,24 +634,25 @@
         </div>
 
 
-        <div class="textarea-form-container">
-          <label class="form-label" for="user-comment">Comment</label>
-          <textarea class="form-textarea" id="user-comment" name="user-comment" placeholder="Enter text"></textarea>
+        <div class="modal-form-textareawrap">
+          <label class="modal-form-wrap-label" for="user-comment">Comment</label>
+          <textarea class="modal-form-textareawrap-input" id="user-comment" name="user-comment"
+            placeholder="Enter text"></textarea>
         </div>
-        <div class="checkbox-conteiner">
-          <input value="true" type="checkbox" class="check-input visually-hidden" name="user-privacy"
+        <div class="checkbox">
+          <input value="true" type="checkbox" class="checkbox-input visually-hidden" name="user-privacy"
             id="user-privacy" />
           <label class="checkbox-label" for="user-privacy">
-            <span class="span-modal-checkbox">
+            <span class="checkbox-span">
               <svg class="modal-svg-v" width="10" height="8">
                 <use href="./images/icons.svg#icon-icon-v"></use>
               </svg>
             </span>
             I accept the terms and conditions of the
-            <a class="link-privacy" href="/">Privacy Policy</a>
+            <a class="checkbox-link-privacy" href="/">Privacy Policy</a>
           </label>
         </div>
-        <button class="modal-btn" type="submit">Send</button>
+        <button class="checkbox-send-btn" type="submit">Send</button>
       </form>
     </div>
   </div>

@@ -1,0 +1,97 @@
+:root {
+    --color-dark: #111111;
+    --color-violet: #1e1823;
+    --color-grey: #4c4c4c;
+    --color-orange: #fd9222;
+    --color-notwhite: #fcf1e0;
+    --color-white: #fafafa;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ebebeb;
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    outline: none;
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.love-title,
+.sellers-title,
+.products-title,
+.how-its-title,
+.tasteadds-title {
+    font-weight: 600;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-dark);
+    margin-bottom: 50px;
+}
+
+.love-title-span,
+.how-its-title-span,
+.tasteadds-title-span,
+.products-title-span,
+.sellers-span,
+.footer-blockfirst-title-span,
+.modal-text-span {
+    color: var(--color-orange);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}

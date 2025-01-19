@@ -1,0 +1,79 @@
+//  Section 7      love       ///////////////////////////////////////////
+.love {
+    & .container {
+        padding: 60px 32px 118px 32px;
+    }
+
+    &-btn {
+        min-width: 222px;
+        height: 50px;
+        border: 1px solid #fd9222;
+        border-radius: 100px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 18px;
+        color: #111;
+        padding: 0;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-orange);
+            color: #ffffff;
+        }
+    }
+
+    &-cardlist-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 28px;
+        margin-bottom: 50px;
+    }
+
+    &-cardlist-card {
+        /* flex-basis: calc((100% - 56px) / 3); */
+        position: relative;
+        text-align: center;
+        height: 240px;
+        background-color: transparent;
+
+        &-img {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &-content {
+            background-color: #ffffff;
+            width: 360px;
+            height: 200px;
+            margin-top: 40px;
+            border: 1px solid rgba(17, 17, 17, 0.1);
+            box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+            border-radius: 15px;
+            padding: 56px 24px 24px 24px;
+
+            &-title {
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 1.33333;
+                text-align: center;
+                color: #111;
+                margin-bottom: 24px;
+            }
+
+            &-text {
+                font-size: 14px;
+                line-height: 1.28571;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: rgba(17, 17, 17, 0.7);
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+// ///  Section 2 benefits //////////////////////////////////////////////////
+
+.benefits {
+    background-color: var(--color-violet);
+    width: 1200px;
+    margin: 0 auto;
+
+    & .container {
+        padding: 50px;
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 88px;
+
+        &-card {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.02em;
+            color: #ffffff;
+            width: 308px;
+            position: relative;
+
+            &:before {
+                position: absolute;
+                content: "";
+                width: 124px;
+                height: 2px;
+                background-color: #f34444;
+                top: 113px;
+                right: -108px;
+                transform: rotate(90deg);
+                background-color: rgba(255, 255, 255, 0.5);
+                ;
+            }
+
+            &-text-title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21.94px;
+                color: #ffffff;
+                margin-bottom: 18px;
+            }
+
+            &-text-p {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+
+            &-divsvg {
+                border: 1px solid #ffffff80;
+                width: 62px;
+                height: 62px;
+                margin-bottom: 22px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+
+
+        // &-card {
+        //     width: calc((100% - 176px) / 3);
+        // }
+    }
+}
