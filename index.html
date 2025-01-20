@@ -19,8 +19,10 @@
     <div class="container">
       <nav class="header-nav">
         <div class="header-nav-logo">
-          <a class="header-nav-logo-a" href="./index.html">SIMPLY <span class="header-nav-logo-span">CHOCOLATE</span>
-            <svg class="header-nav-logo-svg" fill="none" width="24" height="24">
+          <a class="header-nav-logo-a" href="./index.html">
+            <i>SIMPLY&nbsp</i>
+            <span class="header-nav-logo-span">CHOCOLATE</span>
+            <svg class="header-nav-logo-svg" fill="none">
               <use href="./images/icons.svg#icon-chocolate-1"></use>
             </svg>
           </a>
@@ -61,6 +63,11 @@
             </li>
           </ul>
         </div>
+        <button class="header-nav-burger-btn">
+          <svg class="header-nav-burger-svg" width="28" height="28">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </nav>
     </div>
   </header>
@@ -77,7 +84,7 @@
           <a class="hero-link-how" href="./index.html">How it’s made</a>
           <a class="hero-link-scroll" href="#footerok">scroll down
             <span class="hero-link-scroll-span">
-              <svg class="hero-link-scroll-svg" width="22" height="22">
+              <svg class="hero-link-scroll-svg">
                 <use href="./images/icons.svg#icon-vector"></use>
               </svg>
             </span>
@@ -145,7 +152,21 @@
           sensation</h2>
         <ul class="tasteadds-cards">
           <li class="tasteadds-onecard">
-            <img class="tasteadds-onecard-img" src="./images/img-1d.png" width="214" height="160" alt="">
+            <!-- <picture>
+              <source srcset="./images/img1des.png" media="(min-width: 1200px)">
+              <img class="tasteadds-onecard-img" src="./images/img1tab-mob.png" width="214" height="160" alt="">
+            </picture> -->
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                            ./images/img1des@1x.png 1x,
+                            ./images/img1des@2x.png 2x
+                          " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                            ./images/img1tab-mob@1x.png 1x,
+                            ./images/img1tab-mob@2x.png 2x
+                          " type="image/png" />
+              <img src="./images/img1tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">MILK CHOCOLATE</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -169,7 +190,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard">
-            <img class="tasteadds-onecard-img" src="./images/img-2d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img2des@1x.png 1x,
+                                        ./images/img2des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img2tab-mob@1x.png 1x,
+                                        ./images/img2tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img2tab-mob@1x.png" alt="milk" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">MILK</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -192,7 +224,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard">
-            <img class="tasteadds-onecard-img" src="./images/img-3d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img3des@1x.png 1x,
+                                        ./images/img3des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img3tab-mob@1x.png 1x,
+                                        ./images/img3tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img3tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">NUTS</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -215,7 +258,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard">
-            <img class="tasteadds-onecard-img" src="./images/img-4d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img4des@1x.png 1x,
+                                        ./images/img4des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img4tab-mob@1x.png 1x,
+                                        ./images/img4tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img4tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">SEMI - SWEET CHOCOLATE</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -237,7 +291,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard">
-            <img class="tasteadds-onecard-img" src="./images/img-5d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img5des@1x.png 1x,
+                                        ./images/img5des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img5tab-mob@1x.png 1x,
+                                        ./images/img5tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img5tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">CACAO</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -260,7 +325,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard">
-            <img class="tasteadds-onecard-img" src="./images/img-6d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img6des@1x.png 1x,
+                                        ./images/img6des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img6tab-mob@1x.png 1x,
+                                        ./images/img6tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img6tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">RASPBERRY</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -282,7 +358,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard ">
-            <img class="tasteadds-onecard-img" src="./images/img-7d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img7des@1x.png 1x,
+                                        ./images/img7des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img7tab-mob@1x.png 1x,
+                                        ./images/img7tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img7tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">COCONUT OIL</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -305,7 +392,18 @@
             </div>
           </li>
           <li class="tasteadds-onecard ">
-            <img class="tasteadds-onecard-img" src="./images/img-8d.png" width="214" height="160" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="
+                                        ./images/img8des@1x.png 1x,
+                                        ./images/img8des@2x.png 2x
+                                      " type="image/png" />
+              <source media="(min-width: 768px)" srcset="
+                                        ./images/img8tab-mob@1x.png 1x,
+                                        ./images/img8tab-mob@2x.png 2x
+                                      " type="image/png" />
+              <img src="./images/img8tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" width="214"
+                height="160" />
+            </picture>
             <div class="tasteadds-overlay-card">
               <h3 class="tasteadds-overlay-card-title">VANILLA</h3>
               <div class="tasteadds-overlay-card-wrapper">
@@ -329,7 +427,7 @@
       </div>
     </section>
     <!-- ////////////////    Section 4     /////////////////-->
-    <section class="how-its" id="how_its_made">
+    <!-- <section class="how-its" id="how_its_made">
       <div class="container">
         <h2 class="how-its-title">How it’s <span class="how-its-title-span">made</span>?</h2>
         <div class="how-its-content">
@@ -358,9 +456,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ////////////////    Section 5     /////////////////-->
-    <section class="products">
+    <!-- <section class="products">
       <div class="container">
         <h2 class="products-title">Our <span class="products-title-span">products</span></h2>
         <ul class="products-cards">
@@ -414,9 +512,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- ////////////////    Section 6     /////////////////-->
-    <section class="sellers">
+    <!-- <section class="sellers">
       <div class="container">
         <h2 class="sellers-title"><span class="sellers-span">Top</span> sellers</h2>
         <ul class="sellers-cards">
@@ -466,9 +564,9 @@
         </ul>
       </div>
 
-    </section>
+    </section> -->
     <!-- ////////////////    Section 7     /////////////////-->
-    <section class="love" id="chocolate_is_loved">
+    <!-- <section class="love" id="chocolate_is_loved">
       <div class="container">
         <h2 class="love-title"><span class="love-title-span">Chocolate</span> is loved</h2>
         <div class="love-cardlist-cards">
@@ -507,9 +605,9 @@
         </div>
         <button class="love-btn" type="button">Leave a review</button>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer" id="footerok">
+  <!-- <footer class="footer" id="footerok">
     <div class="container">
       <div class="footer-block1">
         <h2 class="footer-block1-title"><span class="footer-blockfirst-title-span">Chocolate</span> a delicious cure
@@ -581,8 +679,8 @@
           </button>
       </div>
     </div>
-  </footer>
-  <div class="modal">
+  </footer> -->
+  <!-- <section class="modal">
     <div class="modal-window">
       <button class="modal-close-btn" type="button">
         <svg class="modal-svg-x" width="16" height="16">
@@ -655,7 +753,7 @@
         <button class="checkbox-send-btn" type="submit">Send</button>
       </form>
     </div>
-  </div>
+  </section> -->
 </body>
 
 </html>

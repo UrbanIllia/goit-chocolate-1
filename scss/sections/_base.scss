@@ -22,6 +22,11 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+    // display: inline-block;
+}
+
+address {
+    font-style: normal;
 }
 
 h1,
@@ -41,6 +46,9 @@ ul {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
 
 input,
@@ -53,11 +61,24 @@ button {
     cursor: pointer;
 }
 
+
 .container {
-    max-width: 1200px;
+    max-width: 375px;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
+
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media (min-width: 1200px) {
+
+        max-width: 1200px;
+
+    }
 }
+
 
 .love-title,
 .sellers-title,

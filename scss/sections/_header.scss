@@ -1,7 +1,11 @@
 // //////    Header   /////////// ////////////////////////////////////////
 .header {
     & .container {
-        padding: 20px 32px;
+        padding: 20px 20px 14px 20px;
+
+        @media (min-width: 768px) {
+            padding: 20px 32px;
+        }
     }
 
     &-nav {
@@ -9,27 +13,79 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 365px;
+
+        @media (min-width: 768px) {
+            gap: 47px;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 365px;
+        }
 
         &-logo-a {
-            font-size: 18px;
-            font-style: italic;
+            font-size: 14px;
             font-weight: 700;
-            line-height: 20px;
-            display: inline-flex;
+            line-height: 1.28571;
+            letter-spacing: -0.03em;
+            display: flex;
+            // flex-direction: row;
+            align-items: center;
+
+
+            @media (min-width: 1200px) {
+                font-size: 18px;
+                line-height: 1.11111;
+            }
         }
 
         &-logo-span {
             font-style: normal;
         }
+
+        &-logo-svg {
+            margin-left: 4px;
+            width: 21px;
+            height: 21px;
+
+            @media (min-width: 1200px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        &-burger-btn {
+            padding: 0;
+            border: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            @media (min-width: 768px) {
+                display: none;
+            }
+        }
+
+        &-burger-svg {
+            stroke: var(--color-dark);
+        }
     }
 
+
+
     &-menu {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 90px;
+        display: none;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 28px;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 90px;
+        }
 
         &-links {
             font-size: 14px;
