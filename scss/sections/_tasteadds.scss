@@ -1,32 +1,78 @@
 // ///// Section 3     tasteadds  ///////////////////////////////////////////////////
 .tasteadds {
     & .container {
-        padding: 120px 32px 60px 32px;
+        padding: 80px 20px 40px 20px;
+
+        @media (min-width: 768px) {
+            padding: 100px 32px 50px 32px;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 120px 32px 60px 32px;
+        }
     }
 
+
     &-title {
-        width: 412px;
+        width: 283px;
         margin-left: auto;
         margin-right: auto;
+
+        @media (min-width: 768px) {
+            width: 412px;
+        }
+
     }
 
     &-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        flex-wrap: wrap;
-        gap: 32px;
+
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 32px 32px;
+        }
+
+        @media (min-width: 1200px) {
+            // width: 260px;
+        }
     }
 
     &-onecard {
         position: relative;
-        border-radius: 15px 15px 0 0;
-        // flex-basis: calc((100%-96px) / 4);
-        padding: 28px 23px;
-        /* height: 270px; */
-        width: 260px;
+        border-radius: 15px;
+
+        padding: 32px 28px 28px 28px;
+        width: 335px;
         overflow: hidden;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+
+        }
+
+        @media (min-width: 768px) {
+            width: 336px;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+
+            }
+        }
+
+        @media (min-width: 1200px) {
+            width: 260px;
+            padding: 28px 23px;
+            // flex-basis: calc((100%-96px) / 4);
+        }
 
         &-svg {
             position: absolute;
@@ -49,10 +95,27 @@
         }
 
         &-img {
-            margin-bottom: 36px;
+
+            width: 236px;
+            height: 176px;
+            margin-bottom: 16px;
+
+            @media (min-width: 768px) {
+                width: 336px;
+                margin-bottom: 22px;
+            }
+
+            @media (min-width: 1200px) {
+                margin-bottom: 36px;
+                width: 214px;
+                height: 160px;
+            }
         }
 
         &-text {
+            position: absolute;
+            bottom: 28px;
+            left: 28px;
             font-weight: 600;
             font-size: 14px;
             line-height: 1.28571;
@@ -60,8 +123,6 @@
             text-transform: uppercase;
         }
     }
-
-
 
     &-overlay-card {
         position: absolute;

@@ -86,13 +86,20 @@ button {
 .how-its-title,
 .tasteadds-title {
     font-weight: 600;
-    line-height: 1.16667;
+    line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     text-align: center;
     color: var(--color-dark);
     margin-bottom: 50px;
+    font-size: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 24px;
+        line-height: 1.16667;
+    }
 }
+
 
 .love-title-span,
 .how-its-title-span,

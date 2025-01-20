@@ -83,12 +83,23 @@ button {
 .how-its-title,
 .tasteadds-title {
   font-weight: 600;
-  line-height: 1.16667;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
   color: var(--color-dark);
   margin-bottom: 50px;
+  font-size: 20px;
+}
+@media (min-width: 768px) {
+  .love-title,
+  .sellers-title,
+  .products-title,
+  .how-its-title,
+  .tasteadds-title {
+    font-size: 24px;
+    line-height: 1.16667;
+  }
 }
 
 .love-title-span,
@@ -491,7 +502,6 @@ button {
 }
 @media (min-width: 768px) {
   .benefits-list {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -560,28 +570,66 @@ button {
 }
 
 .tasteadds .container {
-  padding: 120px 32px 60px 32px;
+  padding: 80px 20px 40px 20px;
+}
+@media (min-width: 768px) {
+  .tasteadds .container {
+    padding: 100px 32px 50px 32px;
+  }
+}
+@media (min-width: 1200px) {
+  .tasteadds .container {
+    padding: 120px 32px 60px 32px;
+  }
 }
 .tasteadds-title {
-  width: 412px;
+  width: 283px;
   margin-left: auto;
   margin-right: auto;
 }
-.tasteadds-cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  flex-wrap: wrap;
-  gap: 32px;
+@media (min-width: 768px) {
+  .tasteadds-title {
+    width: 412px;
+  }
+}
+@media (min-width: 768px) {
+  .tasteadds-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 32px;
+  }
 }
 .tasteadds-onecard {
   position: relative;
-  border-radius: 15px 15px 0 0;
-  padding: 28px 23px;
-  /* height: 270px; */
-  width: 260px;
+  border-radius: 15px;
+  padding: 32px 28px 28px 28px;
+  width: 335px;
   overflow: hidden;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tasteadds-onecard:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .tasteadds-onecard {
+    width: 336px;
+  }
+  .tasteadds-onecard:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .tasteadds-onecard {
+    width: 260px;
+    padding: 28px 23px;
+  }
 }
 .tasteadds-onecard-svg {
   position: absolute;
@@ -600,9 +648,27 @@ button {
   border: 1px solid #fd9222;
 }
 .tasteadds-onecard-img {
-  margin-bottom: 36px;
+  width: 236px;
+  height: 176px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .tasteadds-onecard-img {
+    width: 336px;
+    margin-bottom: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .tasteadds-onecard-img {
+    margin-bottom: 36px;
+    width: 214px;
+    height: 160px;
+  }
 }
 .tasteadds-onecard-text {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.28571;
@@ -682,28 +748,72 @@ button {
 }
 
 .how-its .container {
-  padding: 60px 32px 60px 32px;
+  padding: 40px 20px;
+}
+@media (min-width: 768px) {
+  .how-its .container {
+    padding: 50px 77px;
+  }
+}
+@media (min-width: 1200px) {
+  .how-its .container {
+    padding: 60px 32px;
+  }
 }
 .how-its-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   background-color: #ffffff;
 }
+@media (min-width: 1200px) {
+  .how-its-content {
+    flex-direction: row;
+  }
+}
 .how-its-content-img {
-  /* width: 100%; */
+  width: 100%;
   border-radius: 15px;
+  width: 335px;
+  height: 500px;
+}
+@media (min-width: 768px) {
+  .how-its-content-img {
+    width: 614px;
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .how-its-content-img {
+    width: 600px;
+    height: 400px;
+  }
 }
 .how-its-content-text {
-  padding: 32px;
+  padding: 20px 14px;
   position: relative;
+}
+@media (min-width: 768px) {
+  .how-its-content-text {
+    padding: 32px;
+  }
+}
+.how-its-content-text-list {
+  padding-left: 16px;
 }
 .how-its-content-text-title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33333;
   color: #111;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+  width: 307px;
+}
+@media (min-width: 768px) {
+  .how-its-content-text-title {
+    width: 350px;
+    margin-bottom: 28px;
+  }
 }
 .how-its-content-text-list li:not(:last-child) {
   margin-bottom: 24px;
@@ -717,7 +827,7 @@ button {
 .how-its-content-text-list-li:before {
   content: "";
   position: absolute;
-  left: 15px;
+  left: 16px;
   background-color: #4c4c4c;
   /* margin-right: 30px; */
   width: 8px;
@@ -725,6 +835,11 @@ button {
   border-radius: 50%;
   margin-top: 5px;
   border: 1px solid #ECEDED;
+}
+@media (min-width: 768px) {
+  .how-its-content-text-list-li:before {
+    left: 32px;
+  }
 }
 
 .products .container {

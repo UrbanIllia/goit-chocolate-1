@@ -2,30 +2,72 @@
 
 .how-its {
     & .container {
-        padding: 60px 32px 60px 32px;
+        padding: 40px 20px;
+
+        @media (min-width: 768px) {
+            padding: 50px 77px;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 60px 32px;
+        }
     }
 
     &-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 20px;
         background-color: #ffffff;
 
+        @media (min-width: 768px) {}
+
+        @media (min-width: 1200px) {
+            flex-direction: row;
+
+        }
+
         &-img {
-            /* width: 100%; */
+            width: 100%;
             border-radius: 15px;
+            width: 335px;
+            height: 500px;
+
+            @media (min-width: 768px) {
+                width: 614px;
+                height: 400px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 600px;
+                height: 400px;
+            }
         }
 
         &-text {
-            padding: 32px;
+            padding: 20px 14px;
             position: relative;
+
+            @media (min-width: 768px) {
+                padding: 32px;
+            }
+
+            &-list {
+                padding-left: 16px;
+            }
 
             &-title {
                 font-weight: 600;
                 font-size: 18px;
                 line-height: 1.33333;
                 color: #111;
-                margin-bottom: 28px;
+                margin-bottom: 20px;
+                width: 307px;
+
+                @media (min-width: 768px) {
+                    width: 350px;
+                    margin-bottom: 28px;
+
+                }
             }
 
             &-list li:not(:last-child) {
@@ -38,17 +80,24 @@
                 letter-spacing: -0.02em;
                 color: #111;
 
+
                 &:before {
                     content: "";
                     position: absolute;
-                    left: 15px;
+                    left: 16px;
                     background-color: #4c4c4c;
                     /* margin-right: 30px; */
                     width: 8px;
                     height: 8px;
                     border-radius: 50%;
                     margin-top: 5px;
-                    border: 1px solid #ECEDED
+                    border: 1px solid #ECEDED;
+
+                    @media (min-width: 768px) {
+                        left: 32px;
+
+                    }
+
                 }
             }
         }
