@@ -151,7 +151,7 @@
         <h2 class="tasteadds-title">It all adds up to one exceptional <span class="tasteadds-title-span">taste</span>
           sensation</h2>
         <ul class="tasteadds-cards">
-          <li class="tasteadds-onecard">
+          <li class="tasteadds-onecard one">
             <picture>
               <source media="(min-width: 1200px)" srcset="
                             ./images/img1des@1x.png 1x,
@@ -163,7 +163,7 @@
                           " type="image/png" />
               <img src="./images/img1tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" />
             </picture>
-            <div class="tasteadds-overlay-card">
+            <div class="tasteadds-overlay-card first">
               <h3 class="tasteadds-overlay-card-title">MILK CHOCOLATE</h3>
               <div class="tasteadds-overlay-card-wrapper">
                 <a class="tasteadds-overlay-card-link1" href="">chocolate</a>
@@ -218,7 +218,7 @@
               </a>
             </div>
           </li>
-          <li class="tasteadds-onecard">
+          <li class="tasteadds-onecard one">
             <picture>
               <source media="(min-width: 1200px)" srcset="
                                         ./images/img3des@1x.png 1x,
@@ -230,7 +230,7 @@
                                       " type="image/png" />
               <img src="./images/img3tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" />
             </picture>
-            <div class="tasteadds-overlay-card">
+            <div class="tasteadds-overlay-card first">
               <h3 class="tasteadds-overlay-card-title">NUTS</h3>
               <div class="tasteadds-overlay-card-wrapper">
                 <a class="tasteadds-overlay-card-link1" href="">nuts</a>
@@ -283,7 +283,7 @@
               </a>
             </div>
           </li>
-          <li class="tasteadds-onecard">
+          <li class="tasteadds-onecard one">
             <picture>
               <source media="(min-width: 1200px)" srcset="
                                         ./images/img5des@1x.png 1x,
@@ -295,7 +295,7 @@
                                       " type="image/png" />
               <img src="./images/img5tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" />
             </picture>
-            <div class="tasteadds-overlay-card">
+            <div class="tasteadds-overlay-card first">
               <h3 class="tasteadds-overlay-card-title">CACAO</h3>
               <div class="tasteadds-overlay-card-wrapper">
                 <a class="tasteadds-overlay-card-link1" href="">cacao</a>
@@ -348,7 +348,7 @@
               </a>
             </div>
           </li>
-          <li class="tasteadds-onecard ">
+          <li class="tasteadds-onecard one">
             <picture>
               <source media="(min-width: 1200px)" srcset="
                                         ./images/img7des@1x.png 1x,
@@ -360,7 +360,7 @@
                                       " type="image/png" />
               <img src="./images/img7tab-mob@1x.png" alt="milk chocolate" class="tasteadds-onecard-img" />
             </picture>
-            <div class="tasteadds-overlay-card">
+            <div class="tasteadds-overlay-card first">
               <h3 class="tasteadds-overlay-card-title">COCONUT OIL</h3>
               <div class="tasteadds-overlay-card-wrapper">
                 <a class="tasteadds-overlay-card-link1" href="">coconut oil</a>
@@ -420,7 +420,13 @@
       <div class="container">
         <h2 class="how-its-title">How it’s <span class="how-its-title-span">made?</span></h2>
         <div class="how-its-content">
-          <img class="how-its-content-img" src="./images/image_desk.jpg" alt="">
+          <div class="how-its-content-wrap1">
+            <div class="how-its-content-wrap2">
+              <video class="how-its-content-video" src="./video/chocolate.mp4" width="600" height="400" controls
+                autoplay loop preload="auto"></video>
+            </div>
+          </div>
+          <!-- <img class="how-its-content-img" src="./images/image_desk.jpg" alt=""> -->
           <div class="how-its-content-text">
             <h3 class="how-its-content-text-title">Try our chocolates today and discover the perfect balance of flavor
             </h3>
@@ -451,13 +457,13 @@
       <div class="container">
         <h2 class="products-title">Our <span class="products-title-span">products</span></h2>
         <ul class="products-cards">
-          <li class="products-onecard">
+          <li class="products-onecard" data-badge="Sale 5%">
             <img class="products-onecard-img" width="230" height="201" src="./images/img-1c.jpg" alt="">
             <h3 class="products-onecard-title">Orange</h3>
             <p class="products-onecard-text">Dark chocolate</p>
             <button class="products-onecard-btn">45 UAH</button>
           </li>
-          <li class="products-onecard">
+          <li class="products-onecard" data-badge="Sale 7%">
             <img class="products-onecard-img" width="230" height="201" src="./images/img-2c.jpg" alt="">
             <h3 class="products-onecard-title">Apple&Cranberry</h3>
             <p class="products-onecard-text">Milk chocolate</p>
@@ -469,7 +475,7 @@
             <p class="products-onecard-text">Dark chocolate</p>
             <button class="products-onecard-btn">66 UAH</button>
           </li>
-          <li class="products-onecard">
+          <li class="products-onecard" data-badge1="Top">
             <img class="products-onecard-img" width="230" height="201" src="./images/img-4c.jpg" alt="">
             <h3 class="products-onecard-title">Pineapple</h3>
             <p class="products-onecard-text">Dark chocolate</p>
@@ -481,7 +487,7 @@
             <p class="products-onecard-text">Milk chocolate</p>
             <button class="products-onecard-btn">45 UAH</button>
           </li>
-          <li class="products-onecard">
+          <li class="products-onecard" data-badge1="Top">
             <img class="products-onecard-img" width="230" height="201" src="./images/img-6c.jpg" alt="">
             <h3 class="products-onecard-title">Honey</h3>
             <p class="products-onecard-text">Milk chocolate</p>
@@ -503,7 +509,7 @@
       </div>
     </section>
     <!-- ////////////////    Section 6     /////////////////-->
-    <!-- <section class="sellers">
+    <section class="sellers">
       <div class="container">
         <h2 class="sellers-title"><span class="sellers-span">Top</span> sellers</h2>
         <ul class="sellers-cards">
@@ -553,9 +559,9 @@
         </ul>
       </div>
 
-    </section> -->
-    <!-- ////////////////    Section 7     /////////////////-->
-    <!-- <section class="love" id="chocolate_is_loved">
+    </section>
+    <!-- ////////////////    Section 7     ///////////////// -->
+    <section class="love" id="chocolate_is_loved">
       <div class="container">
         <h2 class="love-title"><span class="love-title-span">Chocolate</span> is loved</h2>
         <div class="love-cardlist-cards">
@@ -570,7 +576,7 @@
             </div>
           </div>
           <div class="love-cardlist-card">
-            <img class="love-cardlist-card-img" width="80" height="80" src="./images/nazar_png.png" alt="Nazar Babenko"
+            <img class="love-cardlist-card-img" width="80" height="80" src="./images/olena_png.png" alt="Nazar Babenko"
               width="60" height="60" />
             <div class="love-cardlist-card-content">
               <h3 class="love-cardlist-card-content-title">Nazar Babenko</h3>
@@ -581,8 +587,8 @@
             </div>
           </div>
           <div class="love-cardlist-card">
-            <img class="love-cardlist-card-img" width="80" height="80" src="./images/victoria_png.png"
-              alt="Olena Kampusch" width="60" height="60" />
+            <img class="love-cardlist-card-img" width="80" height="80" src="./images/nazar_png.png" alt="Olena Kampusch"
+              width="60" height="60" />
             <div class="love-cardlist-card-content">
               <h3 class="love-cardlist-card-content-title">Olena Kampusch</h3>
               <p class="love-cardlist-card-content-text">
@@ -594,9 +600,9 @@
         </div>
         <button class="love-btn" type="button">Leave a review</button>
       </div>
-    </section> -->
+    </section>
   </main>
-  <!-- <footer class="footer" id="footerok">
+  <footer class="footer" id="footerok">
     <div class="container">
       <div class="footer-block1">
         <h2 class="footer-block1-title"><span class="footer-blockfirst-title-span">Chocolate</span> a delicious cure
@@ -658,7 +664,7 @@
             </li>
           </ul>
         </nav>
-        <form class="footer-block2-form">
+        <form class="footer-block2-form" action="">
           <label class="footer-block2-form-label" for="foot-email-label">
             <input class="footer-block2-form-input" type="email" id="foot-email-label" name="user-email"
               placeholder="Enter your email" />
@@ -666,10 +672,11 @@
           <button class="footer-block2-form-btn" type="submit">
             Subscribe
           </button>
+        </form>
       </div>
     </div>
-  </footer> -->
-  <!-- <section class="modal is-open">
+  </footer>
+  <section class="modal">
     <div class="modal-window">
       <button class="modal-close-btn" type="button">
         <svg class="modal-svg-x" width="16" height="16">
@@ -683,7 +690,8 @@
         <div class="modal-form-wrap">
           <label class="modal-form-wrap-label" for="user-name">Name</label>
           <div class="modal-form-wrap-div">
-            <input class="modal-form-wrap-input" type="text" id="user-name" name="user-name" required maxlength="10" />
+            <input class="modal-form-wrap-input" type="text" id="user-name" name="user-name"
+              pattern="[a-zA-Zа-яА-ЯіІєЄЇї]" required maxlength="10" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-user"></use>
             </svg>
@@ -709,8 +717,8 @@
         <div class="modal-form-wrap">
           <label class="modal-form-wrap-label" for="phonenumber">Phone number</label>
           <div class="modal-form-wrap-div">
-            <input class="modal-form-wrap-input" type="tel" id="phonenumber" name="phonenumber" required
-              maxlength="10" />
+            <input class="modal-form-wrap-input" type="tel" id="phonenumber" name="phonenumber" required maxlength="10"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" title="xxx-xx-xx" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-phone"></use>
             </svg>
@@ -742,7 +750,7 @@
         <button class="checkbox-send-btn" type="submit">Send</button>
       </form>
     </div>
-  </section> -->
+  </section>
 </body>
 
 </html>
