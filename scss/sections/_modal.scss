@@ -28,7 +28,9 @@
         background: var(--color-white);
         border-radius: 15px;
         width: 517px;
-        min-height: 794px;
+        height: 794px;
+        overflow-y: auto;
+        max-height: 95%;
         padding: 38px 40px 40px 40px;
 
         box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -112,18 +114,6 @@
                     stroke: var(--color-orange);
                     transition: stroke 350ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
-
-                // .modal-form-wrap-input:invalid {
-                //     border-color: #ff1707;
-                // }
-
-                // .modal-form-wrap-input:invalid+.svg-form-war {
-                //     fill: #ff1707;
-                // }
-
-                // .modal-form-wrap-input:valid+.svg-form-war {
-                //     fill: green;
-                // }
             }
         }
 
