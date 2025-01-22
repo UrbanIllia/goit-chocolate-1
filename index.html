@@ -423,7 +423,7 @@
           <div class="how-its-content-wrap1">
             <div class="how-its-content-wrap2">
               <video class="how-its-content-video" src="./video/chocolate.mp4" width="600" height="400" controls
-                autoplay loop preload="auto"></video>
+                autoplay loop preload="auto" muted playsinline></video>
             </div>
           </div>
           <!-- <img class="how-its-content-img" src="./images/image_desk.jpg" alt=""> -->
@@ -601,6 +601,17 @@
         <button class="love-btn" type="button">Leave a review</button>
       </div>
     </section>
+    <section class="review">
+      <div class="container">
+        <h2 class="review-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <p class="review-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+          indulgence that will leave you
+          craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work
+          of art
+          that is sure to please.</p>
+        <button class="review-btn" type="button">Subscribe</button>
+      </div>
+    </section>
   </main>
   <footer class="footer" id="footerok">
     <div class="container">
@@ -690,8 +701,8 @@
         <div class="modal-form-wrap">
           <label class="modal-form-wrap-label" for="user-name">Name</label>
           <div class="modal-form-wrap-div">
-            <input class="modal-form-wrap-input" type="text" id="user-name" name="user-name"
-              pattern="[a-zA-Zа-яА-ЯіІєЄЇї]" required maxlength="10" />
+            <input class="modal-form-wrap-input" type="text" id="user-name" name="user-name" pattern="[A-Za-z0-9]{6,}"
+              required maxlength="10" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-user"></use>
             </svg>
@@ -704,7 +715,8 @@
         <div class="modal-form-wrap">
           <label class="modal-form-wrap-label" for="useremail">Email</label>
           <div class="modal-form-wrap-div">
-            <input class="modal-form-wrap-input" type="email" id="useremail" name="useremail" required maxlength="10" />
+            <input class="modal-form-wrap-input" type="email" id="useremail" name="useremail"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required minlength="7" />
             <svg class="svg-form" width="24" height="24">
               <use href="./images/icons.svg#icon-modal-mail"></use>
             </svg>
