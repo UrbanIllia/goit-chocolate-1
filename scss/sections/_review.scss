@@ -2,68 +2,76 @@
     background-color: #11111166;
     max-width: 1136px;
     margin: 0 auto;
-    background-image: url(../images/Subcribe-des@1x.jpg);
+    background-image: url(../images/Subcribe-mob@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 
-    // @media (min-resolution: 192dpi) {
-    //     background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-    //             rgba(17, 17, 17, 0.4)), url(../images/hero-small@2x.jpg);
-    // }
+    @media (min-resolution: 192dpi) {
+        background-image: url(../images/Subcribe-mob@2x.jpg);
+    }
+
+    @media (min-width: 768px) {
+        background-image: url(../images/Subcribe-tab@1x.jpg);
+        max-width: 768px;
 
 
-    // @media (min-width: 768px) {
-    //     background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-    //             rgba(17, 17, 17, 0.4)), url(../images/hero-med@1x.jpg);
-    //     max-width: 768px;
-    //     margin-bottom: 40px;
+        @media (min-resolution: 192dpi) {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+                    rgba(17, 17, 17, 0.4)), url(../images/Subcribe-tab@2x.jpg);
+        }
+    }
 
-    //     @media (min-resolution: 192dpi) {
-    //         background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-    //                 rgba(17, 17, 17, 0.4)), url(../images/hero-med@2x.jpg);
-    //     }
-    // }
+    @media (min-width: 1200px) {
+        background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+                rgba(17, 17, 17, 0.4)), url(../images/Subcribe-des@1x.jpg);
+        max-width: 1136px;
 
-    // @media (min-width: 1200px) {
-    //     background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-    //             rgba(17, 17, 17, 0.4)), url(../images/hero-big@1x.jpg);
-    //     max-width: 1136px;
-    //     margin-bottom: 80px;
-
-    //     @media (min-resolution: 192dpi) {
-    //         background-image: linear-gradient(rgba(17, 17, 17, 0.4),
-    //                 rgba(17, 17, 17, 0.4)), url(../images/hero-big@2x.jpg);
-    //     }
-    // }
+        @media (min-resolution: 192dpi) {
+            background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+                    rgba(17, 17, 17, 0.4)), url(../images/Subcribe-des@2x.jpg);
+        }
+    }
 
     & .container {
-        padding: 72px 0;
+        padding: 62px 0;
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 24px;
+
+        @media (min-width: 768px) {
+            padding: 72px 0;
+        }
     }
 
     &-title {
-        width: 378px;
+        width: 291px;
         font-size: 24px;
         line-height: 1.16667;
         letter-spacing: -0.03em;
         text-align: center;
         color: #fff;
         text-align: center;
+
+        @media (min-width: 768px) {
+            width: 378px;
+        }
     }
 
     &-text {
-        width: 467px;
+        width: 326px;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.28571;
         letter-spacing: -0.02em;
         text-align: center;
         color: #fff;
+
+        @media (min-width: 768px) {
+            width: 467px;
+        }
     }
 
     &-btn {

@@ -77,6 +77,7 @@ button {
   }
 }
 
+.modal-subscribe-wrapp2-title,
 .love-title,
 .sellers-title,
 .products-title,
@@ -87,11 +88,11 @@ button {
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--color-dark);
   margin-bottom: 32px;
   font-size: 20px;
 }
 @media (min-width: 768px) {
+  .modal-subscribe-wrapp2-title,
   .love-title,
   .sellers-title,
   .products-title,
@@ -103,6 +104,7 @@ button {
   }
 }
 
+.modal-subscribe-wrapp2-title-span,
 .love-title-span,
 .how-its-title-span,
 .tasteadds-title-span,
@@ -1658,21 +1660,53 @@ button {
   background-color: rgba(17, 17, 17, 0.4);
   max-width: 1136px;
   margin: 0 auto;
-  background-image: url(../images/Subcribe-des@1x.jpg);
+  background-image: url(../images/Subcribe-mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .review {
+    background-image: url(../images/Subcribe-mob@2x.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .review {
+    background-image: url(../images/Subcribe-tab@1x.jpg);
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi) {
+  .review {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/Subcribe-tab@2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .review {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/Subcribe-des@1x.jpg);
+    max-width: 1136px;
+  }
+}
+@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi) {
+  .review {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)), url(../images/Subcribe-des@2x.jpg);
+  }
+}
 .review .container {
-  padding: 72px 0;
+  padding: 62px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
+@media (min-width: 768px) {
+  .review .container {
+    padding: 72px 0;
+  }
+}
 .review-title {
-  width: 378px;
+  width: 291px;
   font-size: 24px;
   line-height: 1.16667;
   letter-spacing: -0.03em;
@@ -1680,14 +1714,24 @@ button {
   color: #fff;
   text-align: center;
 }
+@media (min-width: 768px) {
+  .review-title {
+    width: 378px;
+  }
+}
 .review-text {
-  width: 467px;
+  width: 326px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
   text-align: center;
   color: #fff;
+}
+@media (min-width: 768px) {
+  .review-text {
+    width: 467px;
+  }
 }
 .review-btn {
   font-weight: 600;
@@ -1704,4 +1748,279 @@ button {
 .review-btn:hover, .review-btn:focus {
   background-color: #fcf1e0;
   color: var(--color-orange);
+}
+
+.modal-burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: rgba(46, 47, 66, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-burger.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-burger-wrapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--color-violet);
+  border-radius: 10px;
+  width: 220px;
+  height: 924px;
+  overflow-y: auto;
+  max-height: 80%;
+  padding: 136px 46px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .modal-burger-wrapp {
+    width: 290px;
+    padding: 156px 83px;
+  }
+}
+.modal-burger-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .modal-burger-close-btn {
+    top: 24px;
+    right: 32px;
+  }
+}
+.modal-burger-close-btn:focus, .modal-burger-close-btn:hover {
+  background-color: var(--color-orange);
+}
+.modal-burger-close-btn:focus .modal-burger-svg-x, .modal-burger-close-btn:hover .modal-burger-svg-x {
+  fill: var(--color-violet);
+}
+.modal-burger-svg-x {
+  fill: var(--color-notwhite);
+}
+.modal-burger-nav-anchor-li {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-burger-nav-anchor-li:not(:last-child) {
+  margin-bottom: 24px;
+}
+.modal-burger-nav-anchor-li:hover, .modal-burger-nav-anchor-li:focus {
+  color: var(--color-orange);
+}
+.modal-burger-nav-mes {
+  display: flex;
+  flex-direction: row;
+  gap: 19px;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+@media (min-width: 768px) {
+  .modal-burger-nav-mes {
+    left: 34px;
+    bottom: 26px;
+  }
+}
+.modal-burger-nav-mes-svg {
+  fill: var(--color-notwhite);
+  transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 22px;
+  height: 22px;
+}
+@media (min-width: 768px) {
+  .modal-burger-nav-mes-svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+.modal-burger-nav-mes-li:hover .modal-burger-nav-mes-svg {
+  fill: var(--color-orange);
+}
+
+.modal-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: rgba(46, 47, 66, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-subscribe.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-subscribe-img {
+  background-size: cover;
+}
+.modal-subscribe-svg-x {
+  fill: var(--color-white);
+}
+.modal-subscribe-wrapp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--color-white);
+  border-radius: 10px;
+  width: 311px;
+  max-height: 350px;
+  overflow-y: auto;
+  max-height: 90%;
+}
+@media (min-width: 768px) {
+  .modal-subscribe-wrapp {
+    width: 538px;
+    height: 412px;
+  }
+}
+.modal-subscribe-wrapp-close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  top: 15px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .modal-subscribe-wrapp-close-btn {
+    top: 24px;
+    right: 24px;
+  }
+}
+.modal-subscribe-wrapp-close-btn:focus, .modal-subscribe-wrapp-close-btn:hover {
+  background-color: var(--color-orange);
+}
+.modal-subscribe-wrapp-close-btn:focus .modal-subscribe-svg-x, .modal-subscribe-wrapp-close-btn:hover .modal-subscribe-svg-x {
+  fill: var(--color-violet);
+}
+.modal-subscribe-wrapp2 {
+  padding: 20px 15px;
+}
+@media (min-width: 768px) {
+  .modal-subscribe-wrapp2 {
+    padding: 35px 35px;
+  }
+}
+.modal-subscribe-wrapp2-title {
+  color: var(--color-dark);
+  width: 298px;
+  text-align: left;
+  margin-bottom: 28px;
+}
+@media (min-width: 768px) {
+  .modal-subscribe-wrapp2-title {
+    margin-bottom: 28px;
+  }
+}
+.modal-subscribe-wrapp2-form-input {
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 30px;
+  padding: 14px 18px;
+  width: 180px;
+  height: 40px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.3);
+}
+.modal-subscribe-wrapp2-form-input:focus {
+  outline: none;
+  border-color: var(--color-orange);
+}
+@media (min-width: 768px) {
+  .modal-subscribe-wrapp2-form-input {
+    width: 300px;
+    height: 52px;
+  }
+}
+.modal-subscribe-wrapp2-form-label {
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-subscribe-wrapp2-form-btn {
+  border-radius: 100px;
+  padding: 0;
+  min-width: 90px;
+  height: 40px;
+  background-color: var(--color-orange);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1), background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+}
+@media (min-width: 768px) {
+  .modal-subscribe-wrapp2-form-btn {
+    min-width: 137px;
+    height: 52px;
+    margin-left: 8px;
+  }
+  .modal-subscribe-wrapp2-form-btn:hover, .modal-subscribe-wrapp2-form-btn:focus {
+    background-color: #fcf1e0;
+    color: var(--color-orange);
+  }
+}
+
+.modal-buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background: rgba(46, 47, 66, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-buy.is-open {
+  opacity: 1;
+  pointer-events: auto;
 }/*# sourceMappingURL=main.css.map */

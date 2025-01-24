@@ -1,0 +1,133 @@
+.modal-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: rgba(46, 47, 66, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &.is-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    &-wrapp {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        background: var(--color-violet);
+        border-radius: 10px;
+        width: 220px;
+        height: 924px;
+        overflow-y: auto;
+        max-height: 80%;
+        padding: 136px 46px;
+        box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+            0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+
+        @media (min-width: 768px) {
+            width: 290px;
+
+            padding: 156px 83px;
+        }
+    }
+
+
+
+    &-close-btn {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 0;
+        top: 20px;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+        border-radius: 100px;
+        cursor: pointer;
+        background-color: transparent;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media (min-width: 768px) {
+            top: 24px;
+            right: 32px;
+        }
+
+        &:focus,
+        &:hover {
+            background-color: var(--color-orange);
+
+        }
+
+        &:focus .modal-burger-svg-x,
+        &:hover .modal-burger-svg-x {
+            fill: var(--color-violet);
+        }
+    }
+
+    &-svg-x {
+        fill: var(--color-notwhite);
+    }
+
+    &-nav-anchor-li {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.02em;
+        color: #fff;
+        transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        &:hover,
+        &:focus {
+            color: var(--color-orange);
+        }
+    }
+
+    &-nav-mes {
+        display: flex;
+        flex-direction: row;
+        gap: 19px;
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+
+        @media (min-width: 768px) {
+            left: 34px;
+            bottom: 26px;
+        }
+
+        &-svg {
+            fill: var(--color-notwhite);
+            transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+            width: 22px;
+            height: 22px;
+
+            @media (min-width: 768px) {
+                width: 24px;
+                height: 24px;
+            }
+
+        }
+
+        &-li:hover .modal-burger-nav-mes-svg {
+            fill: var(--color-orange);
+        }
+    }
+
+}
