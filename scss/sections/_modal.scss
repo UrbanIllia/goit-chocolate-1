@@ -27,7 +27,7 @@
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         background: var(--color-white);
         border-radius: 15px;
-        width: 517px;
+        max-width: 517px;
         height: 794px;
         overflow-y: auto;
         max-height: 95%;
@@ -76,7 +76,7 @@
         line-height: 1.16667;
         letter-spacing: -0.03em;
         margin-bottom: 42px;
-        width: 298px;
+        max-width: 298px;
     }
 
     &-form {

@@ -762,7 +762,7 @@
       </form>
     </div>
   </section>
-  <section class="modal-burger">
+  <section class="modal-burger is-open">
     <div class="modal-burger-wrapp">
       <button class="modal-burger-close-btn" type="button">
         <svg class="modal-burger-svg-x" width="16" height="16">
@@ -853,44 +853,64 @@
   <section class="modal-buy is-open">
     <div class="modal-buy-wrapp">
       <button class="modal-buy-close-btn" type="button">
-        <svg class="modal-buy-close-btn-svg-x" width="28" height="28">
+        <svg class="modal-buy-close-btn-svg-x" width="14" height="14">
           <use href="./images/icons.svg#icon-x"></use>
         </svg>
       </button>
-      <h2 class="modal-buy-title">BUY NOW</h2>
+      <h2 class="modal-buy-title"><span class="modal-buy-title-span">BUY</span> NOW</h2>
       <div class="modal-buy-cards">
         <ul class="modal-buy-cards-list">
           <li class="modal-buy-cards-list-li">
             <picture>
               <source media="(max-width: 768px)" srcset="
+                                                ./images/chokbuy1-mob@1x.png 1x,
+                                                ./images/chokbuy1-mob@2x.png 2x
+                                              " type="image/png" width="84" height="69" />
+              <source media="(min-width: 768px)" srcset="
                                                 ./images/chokbuy1-des-tab@1x.png 1x,
                                                 ./images/chokbuy1-des-tab@2x.png 2x
-                                              " type="image/png" width="311" height="169" />
-              <source media="(min-width: 768px)" srcset="
-                                                ./images/chokbuy1-mob@1x@1x.png 1x,
-                                                ./images/chokbuy1-mob@1x@2x.png 2x
-                                              " type="image/png" width="538" height="196" />
-              <img src="./chokbuy1-des-tab@1x.png" alt="broun chockolate" class="modal-buy-img" />
+                                              " type="image/png" width="120" height="107" />
+              <img src="./images/chokbuy1-mob@1x.png" alt="broun chockolate" class="modal-buy-img" />
             </picture>
-            <img class="modal-buy-cards-list-li-img"> src="" alt="">
-            <a class="modal-buy-cards-list-li-link"></a> href=""></a>
+            <a class="modal-buy-cards-list-li-link" href="">100 g</a>
           </li>
           <li class="modal-buy-cards-list-li">
-            <img class="modal-buy-cards-list-li-img"> src="" alt="">
-            <a class="modal-buy-cards-list-li-link"></a> href=""></a>
+            <picture>
+              <source media="(max-width: 768px)" srcset="
+                                           ./images/chokbuy2-mob@1x.png 1x,
+                                         ./images/chokbuy2-mob@1x.png 2x
+                                     " type="image/png" width="84" height="69" />
+              <source media="(min-width: 768px)" srcset="
+                                         ./images/chokbuy2-des-tab@1x.png 1x,
+                                         ./images/chokbuy2-des-tab@2x.png 2x
+                                       " type="image/png" width="120" height="107" />
+              <img src="./chokbuy2-mob@1x.png" alt="broun chockolate" class="modal-buy-img" />
+            </picture>
+            <a class="modal-buy-cards-list-li-link" href="">200 g</a>
           </li>
           <li class="modal-buy-cards-list-li">
-            <img class="modal-buy-cards-list-li-img"> src="" alt="">
-            <a class="modal-buy-cards-list-li-link"></a> href=""></a>
+            <picture>
+              <source media="(max-width: 767px)" srcset="
+                                                               ./images/chokbuy3-mob@1x.png 1x,
+                                                               ./images/chokbuy3-mob@2x.png 2x
+                                                               " type="image/png" width="84" height="69" />
+              <source media="(min-width: 768px)" srcset="
+                                                                ./images/chokbuy3-des-tab@1x.png 1x,
+                                                                ./images/chokbuy3-des-tab@2x.png 2x
+                                                              " type="image/png" width="120" height="107" />
+              <img src="./chokbuy3-mob@1x.png" alt="broun chockolate" class="modal-buy-img" />
+            </picture>
+            <a class="modal-buy-cards-list-li-link" href="">300 g</a>
           </li>
         </ul>
       </div>
       <!-- .....................................2.....2.....2...2....2... -->
       <form class="modal-buy-form">
+        <span class="modal-buy-form-span">Personal information</span>
         <div class="modal-buy-form-wrapp1">
-          <label class="modal-buy-form-wrapp1-label" for="modal-buy-name">
+          <label class="modal-buy-form-wrapp1-label " for="modal-buy-name">
             <input class="modal-buy-form-wrapp1-input" type="text" id="modal-buy-name" name="modal-buy-name"
-              placeholder="Name" />
+              placeholder="Name" pattern="^[a-zA-Z]+\s[a-zA-Z]+$" />
           </label>
           <label class="modal-buy-form-wrapp1-label" for="modal-buy-surname">
             <input class="modal-buy-form-wrapp1-input" type="email" id="modal-buy-surname" name="modal-buy-surname"
@@ -900,29 +920,51 @@
         <!-- ...................................... -->
         <div class="modal-buy-form-wrapp2">
           <div class="modal-buy-form-wrapp2-div">
-            <label class="modal-buy-form-wrapp2-label" for="modal-buy-email">Email</label>
-            <input class="modal-buy-form-wrapp2-input" type="text" id="modal-buy-email" name="modal-buy-email"
-              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" required
-              maxlength="20" />
+            <span class="modal-buy-form-span">Email</span>
+            <label class="modal-buy-form-wrapp2-label" for="modal-buy-email">
+              <input class="modal-buy-form-wrapp2-input" type="text" id="modal-buy-email" name="modal-buy-email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" required
+                maxlength="20" />
+            </label>
+
           </div>
 
           <div class="modal-buy-form-wrapp2-div">
-            <label class="modal-buy-form-wrapp2-label" for="modal-buy-phone">Phone number</label>
-            <input class="modal-buy-form-wrapp2-input" type="number" id="modal-buy-phone" name="modal-buy-phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" placeholder="Phone number" required maxlength="20" />
+            <span class="modal-buy-form-span">Phone number</span>
+            <span class="modal-buy-wrapp2-span-div modal-buy-before">
+              <label class="modal-buy-form-wrapp2-label" for="modal-buy-phone">
+                <input class="modal-buy-form-wrapp2-input input-ukr" type="number" id="modal-buy-phone"
+                  name="modal-buy-phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}" placeholder="Phone number" required
+                  maxlength="20" />
+                <svg class="modal-buy-form-wrapp2-svg-ukr" width="24" height="18">
+                  <use href="./images/icons.svg#ukraine-flag"></use>
+                </svg>
+              </label>
+            </span>
+
           </div>
 
           <div class="modal-buy-form-wrapp2-div">
-            <label class="modal-buy-form-wrapp2-label" for="modal-buy-card">Card number</label>
-            <input class="modal-buy-form-wrapp2-input" type="number" id="modal-buy-card" name="modal-buy-card"
-              pattern="[0-9]{16}" placeholder="Enter card" required maxlength="16" />
-          </div>
+            <span class="modal-buy-form-span">Card number</span>
+            <span class="modal-buy-wrapp2-span-div">
+              <label class="modal-buy-form-wrapp2-label" for="modal-buy-card">
+                <input class="modal-buy-form-wrapp2-input" type="number" id="modal-buy-card" name="modal-buy-card"
+                  pattern="[0-9]{13,16}" placeholder="Enter card" required maxlength="16" />
+                <svg class="modal-buy-form-wrapp2-svg-master" width="32" height="21">
+                  <use href="./images/icons.svg#icon-master"></use>
+                </svg>
+              </label>
+            </span>
 
+          </div>
 
           <div class="modal-buy-form-wrapp2-textarea">
-            <label class="modal-buy-form-wrapp2-textarea-label" for="modal-buy-comment">Comment</label>
-            <textarea class="modal-buy-form-wrapp2-textarea-input" id="modal-buy-comment" name="modal-buy-comment"
-              placeholder="Enter text"></textarea>
+            <span class="modal-buy-form-span">Comment</span>
+            <label class="modal-buy-form-wrapp2-textarea-label" for="modal-buy-comment">
+              <textarea class="modal-buy-form-wrapp2-textarea-input" id="modal-buy-comment" name="modal-buy-comment"
+                placeholder="Enter text"></textarea>
+            </label>
+
           </div>
         </div>
       </form>

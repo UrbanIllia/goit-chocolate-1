@@ -143,6 +143,7 @@
             justify-content: space-between;
             gap: 14px;
 
+
             &-li {
                 width: 40px;
                 height: 40px;
@@ -151,6 +152,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                line-height: 0;
 
                 &-a {
                     fill: #111111;
